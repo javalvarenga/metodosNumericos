@@ -1,0 +1,23 @@
+{
+  "name": "metodosNumericos",
+  "version": "1.0.0",
+  "description": "Aplicación web que encuentra raíces de funciones a través de métodos númericos Proyecto Universitario",
+  "main": "metodos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javalvarenga/metodosNumericos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javalvarenga/metodosNumericos/issues"
+  },
+  "homepage": "https://github.com/javalvarenga/metodosNumericos#readme",
+  "dependencies": {
+    "desmos": "^1.5.4"
+  }
+}

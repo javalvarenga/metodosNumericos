@@ -3,9 +3,11 @@
 
 //evaluar x en la funcion
 function f(x) {
-    eval=x**3-Math.cos(x)
+     /* x^3-cos(x)  */
+    var eval=x**3-Math.cos(x)
     return eval
 }
+
 //obtener la derivada
 function df(x) {
     return 3*x**2+Math.sin(x)
@@ -31,6 +33,19 @@ var errorChild=document.createElement("p")
 
 var txtRaiz="Raiz: "+newtonRapson(1,10).raiz
 var txtError="Error: "+newtonRapson(1,10).error
+
+var params = {
+    "appName": "graphing", 
+    "width": 800, 
+    "height": 600, 
+    "showToolBar": true, 
+    "showAlgebraInput": true, 
+    "showMenuBar": true,
+    };
+var ggbApplet = new GGBApplet(params, true);
+window.addEventListener("load", function() { 
+ggbApplet.inject('ggb-element');
+});
 
 btn.addEventListener('click',()=>{
     raizChild.textContent=txtRaiz
